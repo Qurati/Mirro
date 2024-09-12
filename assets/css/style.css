@@ -98,6 +98,12 @@ li {
 
 .services {
   padding: 100px 0;
+  background: url(../img/services_bg.png) no-repeat center center/cover;
+}
+.services__ico {
+  display: flex;
+  margin: auto;
+  margin-bottom: 15px;
 }
 .services__title {
   color: #3A5F56;
@@ -138,6 +144,7 @@ li {
   margin-bottom: 6px;
 }
 .services__read {
+  display: flex;
   color: #3A5F56;
   font-size: 17px;
   align-items: center;
@@ -149,4 +156,94 @@ li {
   display: block;
   width: 20px;
   height: 10px;
+}
+
+.preset-store {
+  background: url(../img/store_bg.svg) no-repeat center center/cover;
+  padding: 100px 0;
+}
+.preset-store__title {
+  color: #DB343B;
+  font-size: 32px;
+  margin-bottom: 11px;
+  text-align: center;
+}
+.preset-store__text {
+  color: #292C32;
+  font-size: 16px;
+  max-width: 590px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+.preset-store__text_center {
+  text-align: center;
+}
+.preset-store__row {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.preset-store__card1 {
+  display: inline-block;
+  background: url(../img/one.svg) no-repeat center center/cover;
+  max-width: 380px;
+  height: 438px;
+  border-radius: 16px;
+  padding: 30px;
+}
+.preset-store__card2 {
+  display: inline-block;
+  background: url(../img/two.svg) no-repeat center center/cover;
+  max-width: 380px;
+  height: 438px;
+  border-radius: 16px;
+  padding: 30px;
+}
+.preset-store__card3 {
+  display: inline-block;
+  background: url(../img/three.svg) no-repeat center center/cover;
+  max-width: 380px;
+  height: 438px;
+  border-radius: 16px;
+  padding: 30px;
+}
+.preset-store__name {
+  margin-top: 241px;
+  font-size: 24px;
+  font-family: Roboto;
+  margin-bottom: 6px;
+}
+.preset-store__subtitle {
+  color: #3A5F56;
+  font-size: 16px;
+}
+.preset-store__read {
+  display: flex;
+  color: #3A5F56;
+  font-size: 17px;
+  gap: 5px;
+  justify-content: center;
+}
+.preset-store__read::after {
+  content: "";
+  background: url("../img/arrow.svg") no-repeat center center/cover;
+  display: block;
+  width: 20px;
+  height: 10px;
+}
+
+.contact {
+  background: url(../img/contact_bg.svg) no-repeat center center/cover;
+  padding: 100px 0;
+}
+.contact__block {
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 75px;
+  width: 800px;
+  height: 260px;
+  background: #F4F3F0;
 }

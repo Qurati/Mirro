@@ -109,6 +109,13 @@ li{
 
 .services{
     padding: 100px 0;
+    background: url(../img/services_bg.png) no-repeat center center / cover;
+    
+    &__ico{
+        display: flex;
+        margin: auto;
+        margin-bottom: 15px;
+    }
 
     &__title{
         color: $base-color;
@@ -155,6 +162,7 @@ li{
     }
 
     &__read{
+        display: flex;
         color: $base-color;
         font-size: 17px;
         align-items: center;
@@ -167,4 +175,101 @@ li{
             height: 10px;
         }
     }
+}
+
+.preset-store{
+    background: url(../img/store_bg.svg) no-repeat center center / cover;
+    padding: 100px 0;
+    &__title{
+        color: #DB343B;
+        font-size: 32px;
+        margin-bottom: 11px;
+        text-align: center;
+    }
+    &__text{
+        color: $text-color;
+        font-size: 16px;
+        max-width: 590px;
+        margin: 0 auto;
+        margin-bottom: 17px;
+        &_center{
+            text-align: center;
+        }
+    }
+    &__row{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__card1{
+        display: inline-block;
+        background: url(../img/one.svg) no-repeat center center / cover;
+        max-width: 380px;
+        height: 438px;
+        border-radius: 16px;
+        padding: 30px;
+    }
+    &__card2{
+        display: inline-block;
+        background: url(../img/two.svg) no-repeat center center / cover;
+        max-width: 380px;
+        height: 438px;
+        border-radius: 16px;
+        padding: 30px;
+    }
+    &__card3{
+        display: inline-block;
+        background: url(../img/three.svg) no-repeat center center / cover;
+        max-width: 380px;
+        height: 438px;
+        border-radius: 16px;
+        padding: 30px;
+
+    }
+    &__name{
+        margin-top: 241px;
+        font-size: 24px;
+        font-family: Roboto;
+        margin-bottom: 6px;
+    }
+    &__subtitle{
+        color: $base-color;
+        font-size: 16px;
+    }
+    &__read{
+        display: flex;
+        color: $base-color;
+        font-size: 17px;
+        
+        gap: 5px;
+        &::after{
+            content: '';
+            background: url('../img/arrow.svg') no-repeat center center / cover;
+            display: block;
+            width: 20px;
+            height: 10px;
+        }
+        justify-content: center;
+    }
+}
+
+.contact{
+    background: url(../img/contact_bg.svg) no-repeat center center / cover;
+    padding: 100px 0;
+    &__block{
+        position: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 75px;
+        width: 800px;
+        height: 260px;
+        background: #F4F3F0;
+    }
+    &__btn{
+
+    }
+
 }
