@@ -12,6 +12,7 @@ $text-color: #292C32;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
+
 }
 
 a{
@@ -68,8 +69,8 @@ li{
             content: '';
             background: url('../img/cart.svg');
             display: block;
-            width: 17px;
-            height: 17px;}
+            width: 20px;
+            height: 20px;}
         &::after{
             content: '0';
             color: $base-color;
@@ -84,8 +85,8 @@ li{
 }
 
 .main{
-    background: url(../img/bg.svg) no-repeat center center / cover;
-    padding: 100px 0;
+    background: url(../img/back.svg) no-repeat center center / cover;
+    padding: 100px 170px;
 
     &__wrap{
         display: flex;
@@ -108,12 +109,11 @@ li{
 }
 
 .services{
+    background: url(../img/back1.svg) no-repeat center center / cover;
     padding: 100px 0;
-    background: url(../img/services_bg.png) no-repeat center center / cover;
-    
-    &__ico{
-        display: flex;
-        margin: auto;
+
+    &__zip{
+        text-align: center;
         margin-bottom: 15px;
     }
 
@@ -162,30 +162,38 @@ li{
     }
 
     &__read{
-        display: flex;
         color: $base-color;
         font-size: 17px;
         align-items: center;
         gap: 5px;
         &::after{
             content: '';
-            background: url('../img/arrow.svg') no-repeat center center / cover;
+            background: url('../img/stre.svg') no-repeat center center / cover;
             display: block;
             width: 20px;
             height: 10px;
+            margin-left: 92px;
+            margin-top: -14px;
         }
     }
 }
 
-.preset-store{
-    background: url(../img/store_bg.svg) no-repeat center center / cover;
+.Preset-Store{
+    background: url(../img/back2.svg) no-repeat center center / cover;
     padding: 100px 0;
+
+    &__zip{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
     &__title{
         color: #DB343B;
         font-size: 32px;
         margin-bottom: 11px;
         text-align: center;
     }
+
     &__text{
         color: $text-color;
         font-size: 16px;
@@ -196,80 +204,180 @@ li{
             text-align: center;
         }
     }
+
     &__row{
         margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
-        margin-bottom: 30px;
+        gap: 16px;
     }
 
-    &__card1{
-        display: inline-block;
-        background: url(../img/one.svg) no-repeat center center / cover;
-        max-width: 380px;
-        height: 438px;
+    &__card{
+        max-width: 378px;
         border-radius: 16px;
         padding: 30px;
     }
-    &__card2{
-        display: inline-block;
-        background: url(../img/two.svg) no-repeat center center / cover;
-        max-width: 380px;
-        height: 438px;
-        border-radius: 16px;
-        padding: 30px;
-    }
-    &__card3{
-        display: inline-block;
-        background: url(../img/three.svg) no-repeat center center / cover;
-        max-width: 380px;
-        height: 438px;
-        border-radius: 16px;
-        padding: 30px;
 
+    &__icon{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 9px;
     }
-    &__name{
-        margin-top: 241px;
-        font-size: 24px;
-        font-family: Roboto;
-        margin-bottom: 6px;
-    }
+
     &__subtitle{
         color: $base-color;
-        font-size: 16px;
+        font-size: 24px;
+        margin-bottom: 6px;
     }
+
+    &__box__icon{
+        background-color: white;
+        margin-top: 195px;
+        width: 378.66px;
+        height: 186px;
+        border-radius: 10px;
+    }
+
+    &__text__icon{
+        color: $base-color;
+        padding-top: 40px;
+        padding-left: 30.34px;
+    }
+
+    &__bottom__text{
+        padding-left: 539.5px;
+    }
+
     &__read{
-        display: flex;
         color: $base-color;
         font-size: 17px;
-        
+        align-items: center;
         gap: 5px;
         &::after{
             content: '';
-            background: url('../img/arrow.svg') no-repeat center center / cover;
+            background: url('../img/stre.svg') no-repeat center center / cover;
             display: block;
             width: 20px;
             height: 10px;
+            margin-left: 101px;
+            margin-top: -14px;
         }
-        justify-content: center;
     }
 }
 
-.contact{
-    background: url(../img/contact_bg.svg) no-repeat center center / cover;
+.Contact{
+    background: url(../img/back3.svg) no-repeat center center / cover;
     padding: 100px 0;
-    &__block{
-        position: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 100px 75px;
-        width: 800px;
-        height: 260px;
-        background: #F4F3F0;
-    }
-    &__btn{
 
+    &__fon{
+        max-width: 800px;
+        height: 259px;
+        background-color: #f4f3f0;
+        padding: 30px;
+        margin-left: 200px;
+        border-radius: 16px;
     }
 
+    &__text{
+        color: $text-color;
+        font-size: 28px;
+        max-width: 313px;
+        height: 101px;
+        margin-top: 55px;
+        margin-left: 80px;
+    }
+
+    &__bottom{
+        border-radius: 5px;
+        font-size: 20px;
+        margin-top: -55px;
+        margin-left: 595px;
+    }
+}
+
+.footer{
+    background-color: #292C32;
+    max-height: 779px;
+    padding-bottom: 100px;
+  
+    &__logo {
+    text-align: center;
+    padding-top: 100px;
+     }
+
+    &__block {
+    margin-top: 75px;
+    display: flex;
+    }
+
+    &__list-1 {
+    margin-bottom: 32px;
+    }
+
+    &__section-t {
+    text-transform: uppercase;
+    color: #B87D58;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-right: 50px;
+    }
+
+    &__section {
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 20px;
+    min-width: 194px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    p1{
+        color: #fff;
+    }
+
+    &__list-3 {
+    margin-bottom: 32px;
+    margin-right: 16px;
+    width: 221px;
+    height: 410px;
+    }
+
+    &__list-4 {
+        margin-bottom: 32px;
+        width: 221px;
+        height: 410px;
+        }
+
+    &__list-5 {
+            margin-bottom: 32px;
+            }
+
+    &__sections-2 {
+    padding-left: 70px;
+    }
+
+    &__sections-3 {
+    margin-left: 60px;
+    margin-bottom: 13px;
+    }
+
+    &__sections-4 {
+    padding-left: 50px;
+    }
+
+    &__text-b {
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+    color: #fff;
+    margin-top: 30px;
+    }
+
+    &__socials {
+    text-align: right;
+    margin-top: -30px;
+    }
 }
